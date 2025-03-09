@@ -17,9 +17,9 @@ public class lolTest {
     @Test
     void insertAlumno() {
         Alumno alumno = new Alumno();
-        alumno.setNombre("Yerely");
-        alumno.setApellidos("Martinez");
-        alumno.setEmail("yerely@example.com");
+        alumno.setNombre("Pedro");
+        alumno.setApellidos("Jimenez");
+        alumno.setEmail("nez@example.com");
         alumno.setFechaNacimiento(LocalDate.of(2000, 5, 25));
         alumnoRepository.save(alumno);
 

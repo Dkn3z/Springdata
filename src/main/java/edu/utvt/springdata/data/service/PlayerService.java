@@ -1,6 +1,7 @@
 package edu.utvt.springdata.data.service;
 
 import edu.utvt.springdata.data.entities.Player;
+import org.springframework.data.domain.Page;
 
 import java.util.List;
 import java.util.Optional;
@@ -14,6 +15,7 @@ public interface PlayerService {
 
     public List<Player> findAll();
 
-    public Player deleteById(Long PlayerId);
+    public void deleteById(Long PlayerId);
 
+    public Page<Player> findAll(Integer page, Integer pageSize);
 }
