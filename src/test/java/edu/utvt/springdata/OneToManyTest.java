@@ -17,8 +17,8 @@ import java.util.ArrayList;
 public class OneToManyTest {
     @Autowired
     private BookRepository bookRepository;
-
-   /* @Test
+/*
+   @Test
     void addAll(){
         Book book = new Book(null,"El hobbit", PublishingCompanies.PEARSON, 1937, new ArrayList<Rating>() );
         Rating rating = new Rating(null, ReatingOptions.NOT_FOR_ME, book);
